@@ -9,16 +9,18 @@ using namespace std;
 
 class Manzana : public Frutero {
     private:
-        string carrera;
+        string tipo; //puede ser de tipo Gala, Golden, etc
 
     public:
-        Manzana(float peso);
-        virtual ~Manzana();
+        Manzana();
+        Manzana(string color, string tipo);
+        ~Manzana();
 
+        void setTipo(string);
+        string getTipo();
 
-        virtual string sabor();
-
-        
+        void ShowFruit() override; //override checa si hay errores en la clase
+    
 
 };
 
