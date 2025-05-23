@@ -1,5 +1,5 @@
-#ifndef MANZANA_H
-#define MANZANA_H
+#ifndef NARANJA_H
+#define NARANJA_H
 #include "Frutero.h"
 
 #include <string>
