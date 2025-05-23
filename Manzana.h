@@ -14,7 +14,6 @@ class Manzana : public Frutero {
     public:
         Manzana();
         Manzana(string color, string tipo);
-        ~Manzana();
 
         void setTipo(string);
         string getTipo();

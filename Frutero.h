@@ -9,6 +9,8 @@ class Frutero{
         string color; 
 
     public:
+        Frutero();
+        Frutero(string);
         string getColor();
         void setColor(string);
         virtual void ShowFruit() = 0;
