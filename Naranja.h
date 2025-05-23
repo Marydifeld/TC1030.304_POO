@@ -1,5 +1,5 @@
-#ifndef NARANJA_H
-#define NARANJA_H
+#ifndef MANZANA_H
+#define MANZANA_H
 #include "Frutero.h"
 
 #include <string>
@@ -9,16 +9,17 @@ using namespace std;
 
 class Naranja : public Frutero {
     private:
-        string carrera;
+        string tipo; //puede ser de tipo , etc
 
     public:
-        Naranja(float peso);
-        virtual ~Naranja();
+        Naranja();
+        Naranja(string color, string tipo);
 
+        void setTipo(string);
+        string getTipo();
 
-        virtual string sabor();
-
-        
+        void ShowFruit() override; //override checa si hay errores en la clase
+    
 
 };
 
