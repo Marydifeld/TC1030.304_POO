@@ -14,6 +14,6 @@ string Manzana::getTipo(){
     return tipo; 
 }
 void Manzana::ShowFruit(){
-    cout << "Esto es una manzana.";
+    cout << "Esto es una manzana."<<endl;
 }
 
