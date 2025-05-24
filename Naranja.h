@@ -9,7 +9,7 @@ using namespace std;
 
 class Naranja : public Frutero {
     private:
-        string tipo; //puede ser de tipo , etc
+        string tipo; //puede ser de tipo Blancas, Navel, Rojas, etc
 
     public:
         Naranja();
