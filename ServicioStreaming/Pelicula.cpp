@@ -11,3 +11,13 @@ void Pelicula::mostrarInfo() const
          << " | Duracion: " << duracion << " min"
          << " | Calificacion promedio: " << obtenerPromedio() << endl;
 }
+
+ostream &operator<<(ostream &out, const Pelicula &p)
+{
+    out << "Pelicula: " << p.nombre
+        << " | Genero: " << p.genero
+        << " | Duracion: " << p.duracion << " min"
+        << " | Calificacion promedio: " << p.obtenerPromedio();
+    return out;
+}
+
