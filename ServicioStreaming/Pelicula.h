@@ -9,6 +9,8 @@ public:
     Pelicula();
     Pelicula(int, string, double, string);
     void mostrarInfo() const override;
+    friend ostream &operator<<(ostream &, const Pelicula &);
+
 };
 
 #endif
