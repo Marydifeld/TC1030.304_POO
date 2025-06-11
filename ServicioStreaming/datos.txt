@@ -1,0 +1,10 @@
+Pelicula,Inception,Ciencia Ficcion,148,5
+Pelicula,Titanic,Romance,195,4
+Serie,Breaking Bad,Drama
+Episodio,Pilot,1,48,5
+Episodio,Cat's in the Bag,1,47,4
+Episodio,And the Bag's in the River,1,48,5
+Serie,Stranger Things,Ciencia Ficcion
+Episodio,The Vanishing,1,45,4
+Episodio,The Weirdo,1,50,5
+Episodio,Holly Jolly,1,48,4
