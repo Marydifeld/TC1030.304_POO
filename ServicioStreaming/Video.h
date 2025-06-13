@@ -2,12 +2,11 @@
 #define VIDEO_H
 
 #include <iostream>
-#include <string>
 #include <vector>
+#include <string>
 using namespace std;
 
-class Video
-{
+class Video {
 protected:
     int id;
     string nombre;
@@ -18,12 +17,12 @@ protected:
 public:
     Video();
     Video(int, string, double, string);
-    virtual ~Video();
     virtual void mostrarInfo() const = 0;
     void agregarCalificacion(double);
     double obtenerPromedio() const;
     string getGenero() const;
     string getNombre() const;
+    virtual ~Video() {}
 };
 
 #endif

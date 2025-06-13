@@ -1,37 +1,30 @@
 #include "Episodio.h"
 
-Episodio::Episodio()
-{
-    numEpisodio = 0;
-    tituloEpisodio = "Sin titulo";
-    duracion = 0.0;
+Episodio::Episodio() {
+    titulo = "Sin titulo";
+    duracion = 0;
     temporada = 0;
-    calificacion = 0.0;
+    calificacion = 0;
 }
 
-Episodio::Episodio(int numero, string titulo, double dur, int temp, double calif)
-{
-    numEpisodio = numero;
-    tituloEpisodio = titulo;
-    duracion = dur;
+Episodio::Episodio(string t, double d, int temp, double c) {
+    titulo = t;
+    duracion = d;
     temporada = temp;
-    calificacion = calif;
+    calificacion = c;
 }
 
-double Episodio::getDuracion() const
-{
-    return duracion;
-}
-
-double Episodio::getCalificacion() const
-{
-    return calificacion;
-}
-
-void Episodio::mostrar() const
-{
-    cout << "  Episodio " << numEpisodio << ": " << tituloEpisodio
+void Episodio::mostrar() const {
+    cout << "Episodio: " << titulo
          << " | Temporada: " << temporada
          << " | Duracion: " << duracion
          << " | Calificacion: " << calificacion << endl;
+}
+
+double Episodio::getDuracion() const {
+    return duracion;
+}
+
+double Episodio::getCalificacion() const {
+    return calificacion;
 }
